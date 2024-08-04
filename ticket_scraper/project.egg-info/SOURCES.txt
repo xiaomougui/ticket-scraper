@@ -1,0 +1,11 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+ticket_scraper/__init__.py
+ticket_scraper/middlewares.py
+ticket_scraper/pipelines.py
+ticket_scraper/settings.py
+ticket_scraper/spiders/tickets.py

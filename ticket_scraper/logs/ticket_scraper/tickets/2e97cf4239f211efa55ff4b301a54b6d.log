@@ -1,0 +1,219 @@
+2024-07-04 18:43:04 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: ticket_scraper)
+2024-07-04 18:43:04 [scrapy.utils.log] INFO: Versions: lxml 5.2.2.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.3.0, Python 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.2 4 Jun 2024), cryptography 42.0.8, Platform Windows-10-10.0.19045-SP0
+2024-07-04 18:43:04 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): localhost:5000
+2024-07-04 18:43:04 [urllib3.connectionpool] DEBUG: http://localhost:5000 "POST /test HTTP/1.1" 200 21
+2024-07-04 18:43:04 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-07-04 18:43:04 [py.warnings] WARNING: D:\Python\lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-07-04 18:43:04 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-07-04 18:43:04 [scrapy.extensions.telnet] INFO: Telnet Password: 52d15e32044cca57
+2024-07-04 18:43:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-07-04 18:43:05 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'ticket_scraper',
+ 'LOG_FILE': 'logs\\ticket_scraper\\tickets\\2e97cf4239f211efa55ff4b301a54b6d.log',
+ 'NEWSPIDER_MODULE': 'ticket_scraper.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['ticket_scraper.spiders']}
+2024-07-04 18:43:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-07-04 18:43:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-07-04 18:43:05 [scrapy.middleware] INFO: Enabled item pipelines:
+['ticket_scraper.pipelines.TicketPipeline',
+ 'ticket_scraper.pipelines.MysqlTicketPipeline']
+2024-07-04 18:43:05 [scrapy.core.engine] INFO: Spider opened
+2024-07-04 18:43:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-07-04 18:43:05 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-07-04 18:43:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.damai.cn/404/> from <GET https://search.damai.cn/robots.txt>
+2024-07-04 18:43:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.damai.cn/404/> (referer: None)
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 15 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 16 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 17 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 18 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 19 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 20 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 21 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 68 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 69 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 70 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 79 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 80 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 82 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 83 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 85 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 86 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 88 without any user agent to enforce it on.
+2024-07-04 18:43:05 [protego] DEBUG: Rule at line 89 without any user agent to enforce it on.
+2024-07-04 18:43:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1> (referer: https://search.damai.cn/search.htm?spm=a2oeg.home.category.ditem_0.591b23e1bWz0BM&ctl=%E6%BC%94%E5%94%B1%E4%BC%9A&order=1&cty=%E5%8C%97%E4%BA%AC)
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024沈阳草莓音乐节', 'date': '2024.07.20-07.21', 'actors': '艺人：陈楚生、重塑雕像的权利、二手玫瑰、TizzyT、陈绮贞、曾轶可、海龟先生、DIGI GHETTO、马赛克、丢火车乐队、连麻Swimming、声音碎片、黄旭、柳爽、罗言、达闻西、SummerVapour夏至梦、广场恐惧症、梭哈乐队', 'location': '沈阳', 'location_details': '沈阳市和平区和平杯世界足球公园', 'price': '298-658', 'lowPrice': 298.0, 'highPrice': 658.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '长荡湖·超级芒禾音乐节', 'date': '2024.08.30-09.01', 'actors': '艺人：十个勤天、杨千嬅、朴树、苏醒、张远、王栎鑫、陆虎、王铮亮、蒲熠星、JarStick、龙崎、李毅杰、法老、小精灵、杨和苏、buzzy、BigYear 大年、张思源、高天佐Trouble.Z、kandi侃迪、Kc左元杰、回春丹乐队、二手玫瑰、痛仰乐队、逃跑计划、旅行团乐队、弹壳、啊之AZ、乃万、万妮达、顽童MJ116、海龟先生、房东的猫、麻园诗人、颜人中、DOUDOU、旅行新蜜蜂乐队、郑润泽、队长YoungCaptain、h3R3刘清云、黄誉博、唐九洲、霓虹花园、徐子未、吴垚滔、傻子与白痴、声音玩具', 'location': '常州', 'location_details': '长荡湖1915音乐岛', 'price': '298-999', 'lowPrice': 298.0, 'highPrice': 999.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '心回山湖音乐节', 'date': '2024.07.20-07.21', 'actors': '艺人：法老、杨和苏、弹壳、王以太、艾志恒Asen、白皮书乐队、马思唯、PSY.P、宝石GEM', 'location': '贵阳', 'location_details': '观山湖公园民族大联欢广场', 'price': '185-777', 'lowPrice': 185.0, 'highPrice': 777.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024石家庄草莓音乐节', 'date': '2024.07.13-07.14', 'actors': '艺人：重塑雕像的权利、朴树、痛仰乐队、后海大鲨鱼、回春丹乐队、动力火车、张蔷、海龟先生、声音碎片、梅卡德尔、尧十三、马頔、达闻西、盘尼西林、疯医乐队、Click#15、香蕉俱乐部乐队、美好药店、八仙饭店、梭哈乐队、队长YoungCaptain、郑润泽、DOUDOU', 'location': '石家庄', 'location_details': '2024石家庄草莓音乐节', 'price': '298-658', 'lowPrice': 298.0, 'highPrice': 658.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '枣林湾音乐节', 'date': '2024.08.10-08.11', 'actors': '艺人：张远、王栎鑫、陆虎、王铮亮、沈以诚、蒲熠星、焦迈奇、房东的猫、黄子弘凡、连淮伟、黄誉博、李俊濠（Rimiko）、石玺彤、霓虹花园、苏醒', 'location': '扬州', 'location_details': '仪征枣林湾园博园', 'price': '99-429', 'lowPrice': 99.0, 'highPrice': 429.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '蔡健雅“Let’s Depart！给世界最悠长的吻”巡回演唱会-苏州站', 'date': '2024.08.03 周六 19:00', 'actors': '艺人：蔡健雅', 'location': '苏州', 'location_details': '苏州奥林匹克体育中心体育馆', 'price': '399-1099', 'lowPrice': 399.0, 'highPrice': 1099.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '王菀之2024初回限定最终场广州音乐会', 'date': '2024.09.14 周六 20:00', 'actors': '艺人：王菀之', 'location': '广州', 'location_details': '广州体育馆2号馆', 'price': '380-980', 'lowPrice': 380.0, 'highPrice': 980.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024ChinaJoy中国国际数码互动娱乐展览会【日常服装通道】', 'date': '2024.07.26-07.29', 'actors': '', 'location': '上海', 'location_details': '上海新国际博览中心', 'price': '100-350', 'lowPrice': 100.0, 'highPrice': 350.0, 'categoryName': '展览休闲'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '第34届青岛国际啤酒节开幕式暨“干杯之夜”大型演唱会', 'date': '2024.07.19 周五 20:00', 'actors': '艺人：李荣浩、单依纯、迪玛希、辛晓琪、动力火车、姚晓棠', 'location': '青岛', 'location_details': '青岛西海岸新区金沙滩啤酒城', 'price': '180-1380', 'lowPrice': 180.0, 'highPrice': 1380.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024张信哲「未来式终极版」世界巡回演唱会-南京站', 'date': '2024.07.06 周六 19:00', 'actors': '艺人：张信哲', 'location': '南京', 'location_details': '南京奥体中心体育场', 'price': '380-2180', 'lowPrice': 380.0, 'highPrice': 2180.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '杨千嬅 MY TREE OF LIVE 巡回演唱会-杭州站', 'date': '2024.08.24 周六 19:30', 'actors': '艺人：杨千嬅', 'location': '杭州', 'location_details': '黄龙体育中心体育场', 'price': '498-1298', 'lowPrice': 498.0, 'highPrice': 1298.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024银河左岸·扬州瓜洲音乐节', 'date': '2024.09.07-09.08', 'actors': '艺人：新裤子、痛仰乐队、二手玫瑰、老狼、回春丹乐队、逃跑计划、夏日入侵企画、理想后花园、新学校废物合唱团、声音玩具、声音碎片、柏林护士、张玮玮、白日密语、岛屿心情、丢火车乐队、对角巷乐队、犬儒、闪星TWINKLESTAR、野肆乐队、表情银行MimikBanka、沉舟乐队、Joyside、声无哀乐、蛙池、贰佰', 'location': '扬州', 'location_details': '扬州润扬森林湿地公园', 'price': '199-699', 'lowPrice': 199.0, 'highPrice': 699.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '林宥嘉 idol 2024世界巡回演唱会-宁波站', 'date': '2024.07.27-07.28', 'actors': '艺人：林宥嘉', 'location': '宁波', 'location_details': '宁波奥体中心体育馆', 'price': '480-1580', 'lowPrice': 480.0, 'highPrice': 1580.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024青岛国信·年华音乐节', 'date': '2024.07.13-07.14', 'actors': '艺人：TizzyT、郑润泽、罗言、王以太、Athree、Gali、刘炫廷、队长YoungCaptain、h3R3刘清云、黄旭、Ice Paper、KEY.L刘聪、小酷Coola、小精灵', 'location': '青岛', 'location_details': '青岛国信体育中心体育场', 'price': '288-688', 'lowPrice': 288.0, 'highPrice': 688.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '大运河（沧州）音乐节', 'date': '2024.07.13-07.14', 'actors': '艺人：回春丹乐队、老狼、丢火车乐队、贰佰、霓虹花园', 'location': '沧州', 'location_details': '沧州园博园', 'price': '199-528', 'lowPrice': 199.0, 'highPrice': 528.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '杨千嬅MY TREE OF LIVE巡回演唱会-宜昌站', 'date': '2024.08.10 周六 19:30', 'actors': '艺人：杨千嬅', 'location': '宜昌', 'location_details': '宜昌奥体中心体育场', 'price': '398-1098', 'lowPrice': 398.0, 'highPrice': 1098.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '喜力®星电音 独家呈现 2024EDC雏菊电音嘉年华', 'date': '2024.09.15-09.16', 'actors': '艺人：the chainsmokers（烟鬼乐队）、R3HAB', 'location': '苏州', 'location_details': '苏州阳澄湖半岛旅游度假区', 'price': '1080-2280', 'lowPrice': 1080.0, 'highPrice': 2280.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024南溪北岸音乐节', 'date': '2024.07.13 周六 16:00', 'actors': '艺人：张远、GAI周延、吴克群、庄心妍、萧全', 'location': '湖州', 'location_details': '安吉孝丰.潴口溪大草坪', 'price': '98-368', 'lowPrice': 98.0, 'highPrice': 368.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '贵阳-Z纪元银河左岸音乐节', 'date': '2024.08.03-08.04', 'actors': '艺人：DOUDOU、二手玫瑰、gala、回春丹乐队、旅行团乐队、犬儒、逃跑计划、痛仰乐队、夏日入侵企画、郑钧、陈楚生、队长YoungCaptain、h3R3刘清云、郑润泽、黄誉博、黄子弘凡、郑人予、旅行新蜜蜂乐队、蒲熠星、十个勤天、汪苏泷、魏晨、张星特', 'location': '贵阳', 'location_details': '观山湖公园民族大联欢广场', 'price': '199-1088', 'lowPrice': 199.0, 'highPrice': 1088.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '「湾游记 2024」滨海音乐节！', 'date': '2024.07.06-07.07', 'actors': '', 'location': '深圳', 'location_details': '欢乐港湾', 'price': '148-248', 'lowPrice': 148.0, 'highPrice': 248.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024年武汉欢乐谷HOHA音乐节', 'date': '2024.07.06-08.17', 'actors': '艺人：GARNiDELiA、美依礼芽、特酷、中国boy-王瀚哲、张震岳、Lambert、张星特', 'location': '武汉', 'location_details': '武汉欢乐谷', 'price': '120-200', 'lowPrice': 120.0, 'highPrice': 200.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': 'TMEA腾讯音乐娱乐盛典 室内音乐节', 'date': '2024.07.19-07.20', 'actors': '', 'location': '中国澳门', 'location_details': '银河综艺馆', 'price': '888-1788', 'lowPrice': 888.0, 'highPrice': 1788.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '济南泉之声超级巨星演唱会（男巨星版）', 'date': '2024.07.21 周日 19:30', 'actors': '艺人：李荣浩、崔健、朴树、杨宗纬、杜德伟', 'location': '济南', 'location_details': '济南奥体中心体育场', 'price': '280-2323', 'lowPrice': 280.0, 'highPrice': 2323.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '蔡健雅“Let’s Depart！给世界最悠长的吻”巡回演唱会-上海返场', 'date': '2024.07.06 周六 19:00', 'actors': '艺人：蔡健雅', 'location': '上海', 'location_details': '浦发银行东方体育中心', 'price': '380-1380', 'lowPrice': 380.0, 'highPrice': 1380.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '棱镜「多少年·多少面」2024巡回演唱会-厦门站', 'date': '2024.07.20 周六 19:00', 'actors': '艺人：棱镜乐队', 'location': '厦门', 'location_details': '厦门奥林匹克体育中心-凤凰体育馆', 'price': '380-880', 'lowPrice': 380.0, 'highPrice': 880.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '郁可唯《终身浪漫的开始》2024巡回演唱会-上海收官站', 'date': '2024.07.20 周六 19:30', 'actors': '艺人：郁可唯', 'location': '上海', 'location_details': '浦发银行东方体育中心', 'price': '380-1080', 'lowPrice': 380.0, 'highPrice': 1080.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024 张信哲未来式终极版演唱会-兰州站', 'date': '2024.08.24 周六 20:00', 'actors': '艺人：张信哲', 'location': '兰州', 'location_details': '兰州奥体中心玫瑰体育场', 'price': '280-2000', 'lowPrice': 280.0, 'highPrice': 2000.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '“爱奇迹”音乐盛典-潍坊站', 'date': '2024.07.20 周六 19:30', 'actors': '艺人：陶喆、王心凌、吴克群、苏妙玲', 'location': '潍坊', 'location_details': '潍坊奥体中心体育场', 'price': '199-899', 'lowPrice': 199.0, 'highPrice': 899.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024成都欢乐谷万物生电音节', 'date': '2024.07.06-08.31', 'actors': '艺人：余景天(Tony)、王以太、刘忻、GAI周延、Ella陈嘉桦、灼海豚乐队', 'location': '成都', 'location_details': '成都欢乐谷', 'price': '150-230', 'lowPrice': 150.0, 'highPrice': 230.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '动力火车“都是因为爱”巡回演唱会长沙站', 'date': '2024.08.03 周六 19:30', 'actors': '艺人：动力火车', 'location': '长沙', 'location_details': '湖南国际会展中心·芒果馆', 'price': '380-1880', 'lowPrice': 380.0, 'highPrice': 1880.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '林宥嘉idol2024巡回演唱会-天津站', 'date': '2024.07.13-07.14', 'actors': '艺人：林宥嘉', 'location': '天津', 'location_details': '天津奥林匹克中心体育馆', 'price': '380-2660', 'lowPrice': 380.0, 'highPrice': 2660.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': 'TizzyT 2024pogo电音节（天津欢乐谷）', 'date': '2024.07.06 周六 19:30', 'actors': '', 'location': '天津', 'location_details': '天津欢乐谷', 'price': '230', 'lowPrice': 230.0, 'highPrice': 230.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '国缘之夜·泰有引力音乐嘉年华', 'date': '2024.07.28 周日 19:30', 'actors': '艺人：李健、朴树、杨宗纬、南征北战', 'location': '泰州', 'location_details': '泰州体育公园体育场', 'price': '180-1480', 'lowPrice': 180.0, 'highPrice': 1480.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '王栎鑫 2024pogo电音节（天津欢乐谷）', 'date': '2024.08.04 周日 19:30', 'actors': '艺人：王栎鑫', 'location': '天津', 'location_details': '天津欢乐谷', 'price': '230', 'lowPrice': 230.0, 'highPrice': 230.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '深圳•陈楚生 2024夏浪音乐节（深圳欢乐谷）', 'date': '2024.07.19 周五 20:00', 'actors': '艺人：陈楚生', 'location': '深圳', 'location_details': '深圳欢乐谷', 'price': '260', 'lowPrice': 260.0, 'highPrice': 260.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '马思唯“黑马季节 Dark Horse Season”巡回演唱会-南昌站', 'date': '2024.08.17 周六 19:30', 'actors': '艺人：马思唯', 'location': '南昌', 'location_details': '南昌国际体育中心体育馆', 'price': '399-999', 'lowPrice': 399.0, 'highPrice': 999.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '超梦音乐节', 'date': '2024.07.27 周六 14:00', 'actors': '艺人：蒲熠星、队长YoungCaptain、郑润泽、h3R3刘清云、姚琛、颜人中、张星特、徐子未、赫兹乐队', 'location': '枣庄', 'location_details': '枣庄文体中心体育场', 'price': '199-369', 'lowPrice': 199.0, 'highPrice': 369.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '夏日时光音乐盛典-大同站', 'date': '2024.07.19 周五 17:30', 'actors': '艺人：张远、王栎鑫、姚政、苏醒、陆虎、王铮亮、孙亦航、金玟岐、陈雪凝', 'location': '大同', 'location_details': '大同市体育中心体育场', 'price': '280-1080', 'lowPrice': 280.0, 'highPrice': 1080.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '“不如见一面”海来阿木2024巡回演唱会-无锡站', 'date': '2024.07.13 周六 19:30', 'actors': '艺人：海来阿木', 'location': '无锡', 'location_details': '无锡体育中心体育馆', 'price': '480-1280', 'lowPrice': 480.0, 'highPrice': 1280.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024周兴哲Odyssey（旅程）巡回演唱会-成都站', 'date': '2024.07.13 周六 19:00', 'actors': '艺人：周兴哲（Eric）', 'location': '成都', 'location_details': '成都东安湖体育公园多功能体育馆', 'price': '380-1280', 'lowPrice': 380.0, 'highPrice': 1280.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024《寻宝游戏》巡回签唱会上海站', 'date': '2024.08.10 周六 19:30', 'actors': '艺人：唐九洲', 'location': '上海', 'location_details': '蜚声上海PHASE LIVE HOUSE SHANGHAI', 'price': '480-780', 'lowPrice': 480.0, 'highPrice': 780.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '丁当《夜游 A Night Tour》巡回演唱会-上海站', 'date': '2024.08.24 周六 19:30', 'actors': '艺人：丁当', 'location': '上海', 'location_details': '国家会展中心(上海)虹馆EH', 'price': '280-680', 'lowPrice': 280.0, 'highPrice': 680.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024“沂河之夏”迷笛厂牌大学生音乐节', 'date': '2024.07.12-07.14', 'actors': '艺人：野外合作社、虎啸春、海底时光机、Mojohand乐队', 'location': '临沂', 'location_details': '临沂大剧院', 'price': '69.9', 'lowPrice': 69.9, 'highPrice': 69.9, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': 'A-Lin黄丽玲「A-LINK with PASSENGERS」2024巡回演唱会-青岛站', 'date': '2024.07.13 周六 19:00', 'actors': '艺人：A-LIN', 'location': '青岛', 'location_details': '青岛市体育中心国信体育馆', 'price': '380-1380', 'lowPrice': 380.0, 'highPrice': 1380.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': 'Twins Spirit 22 演唱会-重庆站', 'date': '2024.07.06 周六 19:30', 'actors': '艺人：Twins', 'location': '重庆', 'location_details': '华熙LIVE·鱼洞·场馆', 'price': '580-1580', 'lowPrice': 580.0, 'highPrice': 1580.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '永庆升平2024德云社郭德纲 于谦相声专场演出---长沙站', 'date': '2024.07.27 周六 19:30', 'actors': '艺人：郭德纲、于谦', 'location': '长沙', 'location_details': '湖南国际会展中心·芒果馆', 'price': '380-1800', 'lowPrice': 380.0, 'highPrice': 1800.0, 'categoryName': '曲苑杂坛'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '永庆升平2024德云社岳云鹏 孙越相声专场演出', 'date': '2024.07.26 周五 19:30', 'actors': '艺人：岳云鹏、孙越', 'location': '成都', 'location_details': '四川省体育馆', 'price': '380-1680', 'lowPrice': 380.0, 'highPrice': 1680.0, 'categoryName': '曲苑杂坛'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '舞台剧《魔幻时刻》（072524）', 'date': '2024.07.25-07.28', 'actors': '艺人：郑云龙、闫楠、宗俊涛、黄宏', 'location': '上海', 'location_details': '上海大剧院-大剧场', 'price': '180-1080', 'lowPrice': 180.0, 'highPrice': 1080.0, 'categoryName': '话剧歌剧'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '开心麻花发颠爆笑新戏《谢同学不杀之恩》', 'date': '2024.07.25-08.04', 'actors': '', 'location': '上海', 'location_details': 'FANCL艺术中心 艺海剧院小剧场', 'price': '99-599', 'lowPrice': 99.0, 'highPrice': 599.0, 'categoryName': '话剧歌剧'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024夏季篮球对抗赛(锦州站)辽宁本钢VS上海久事', 'date': '2024.07.26 周五 19:30', 'actors': '', 'location': '锦州', 'location_details': '锦州滨海体育中心', 'price': '80-580', 'lowPrice': 80.0, 'highPrice': 580.0, 'categoryName': '体育'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': 'X的收藏202:一个男人的肖像', 'date': '2024.06.29-10.20', 'actors': '', 'location': '北京', 'location_details': 'X美术馆', 'price': '1-80', 'lowPrice': 1.0, 'highPrice': 80.0, 'categoryName': '展览休闲'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '话剧《雷雨》', 'date': '2024.07.16-07.28', 'actors': '', 'location': '北京', 'location_details': '首都剧场', 'price': '80-680', 'lowPrice': 80.0, 'highPrice': 680.0, 'categoryName': '话剧歌剧'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '青岛·何广智脱口秀专场《给我个面子》0720', 'date': '2024.07.20 周六', 'actors': '艺人：何广智', 'location': '青岛', 'location_details': '青岛凤凰之声大剧院(西海岸新区)', 'price': '220-580', 'lowPrice': 220.0, 'highPrice': 580.0, 'categoryName': '曲苑杂坛'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024银川西夏啤酒·星空音乐节', 'date': '2024.07.20-07.21', 'actors': '艺人：许巍、赵雷、陈楚生、房东的猫、帆布小镇乐队、旅行新蜜蜂乐队、旅行团乐队、麻园诗人、霓虹花园、苏醒、王栎鑫、王铮亮、夏日入侵企画、张远、陆虎', 'location': '银川', 'location_details': '宁夏贺兰工业园区西夏啤酒音乐公园(新胜西路12号)', 'price': '297-977', 'lowPrice': 297.0, 'highPrice': 977.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '英文原版音乐剧《剧院魅影》', 'date': '2024.12.03-12.15', 'actors': '', 'location': '北京', 'location_details': '天桥艺术中心-大剧场', 'price': '280-1280', 'lowPrice': 280.0, 'highPrice': 1280.0, 'categoryName': '话剧歌剧'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024张韶涵世界巡回演唱会-遵义站', 'date': '2024.07.05 周五 19:30', 'actors': '艺人：张韶涵', 'location': '遵义', 'location_details': '遵义市奥林匹克体育中心体育场', 'price': '380-1280', 'lowPrice': 380.0, 'highPrice': 1280.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '小沈阳 2024《我不！是歌手》演唱会--北京站', 'date': '2024.10.19 周六 19:30', 'actors': '艺人：小沈阳', 'location': '北京', 'location_details': '华熙LIVE·五棵松·场馆', 'price': '380-1280', 'lowPrice': 380.0, 'highPrice': 1280.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '2024光良「今晚我不孤独2.0」巡回演唱会-天津站', 'date': '2024.07.20 周六 19:30', 'actors': '艺人：光良', 'location': '天津', 'location_details': '天津奥林匹克中心体育馆', 'price': '399-1314', 'lowPrice': 399.0, 'highPrice': 1314.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '济南泉之声超级巨星演唱会（女巨星版）', 'date': '2024.07.20 周六 19:30', 'actors': '艺人：陈慧琳、杨丞琳、于文文、温岚、吴莫愁、李翊君', 'location': '济南', 'location_details': '济南奥体中心体育场', 'price': '280-1080', 'lowPrice': 280.0, 'highPrice': 1080.0, 'categoryName': '演唱会'}
+2024-07-04 18:43:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://search.damai.cn/searchajax.html?keyword=&cty=&ctl=&currPage=1&singleChar=&tn=&tsg=0&sctl=&order=1>
+{'name': '何广智脱口秀专场《给我个面子》郑州站 0719', 'date': '2024.07.19 周五 19:30', 'actors': '艺人：何广智', 'location': '郑州', 'location_details': '河南省人民会堂', 'price': '220-580', 'lowPrice': 220.0, 'highPrice': 580.0, 'categoryName': '曲苑杂坛'}
+2024-07-04 18:43:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-07-04 18:43:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 975,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 17646,
+ 'downloader/response_count': 3,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/302': 1,
+ 'elapsed_time_seconds': 0.707438,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 7, 4, 10, 43, 5, 933553, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 83415,
+ 'httpcompression/response_count': 2,
+ 'item_scraped_count': 60,
+ 'log_count/DEBUG': 82,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 7, 4, 10, 43, 5, 226115, tzinfo=datetime.timezone.utc)}
+2024-07-04 18:43:05 [scrapy.core.engine] INFO: Spider closed (finished)
